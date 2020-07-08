@@ -64,6 +64,8 @@ box-shadow: 0px 6px 5px -1px rgba(0,0,0,0.1);
 .small {
     font-size: 0.45rem;
 }
+
+
 /*______________________________________________*/
 header nav{
     display: flex;
@@ -78,7 +80,6 @@ header nav img {
 
 header nav .nav-links {
     font-size: 0.8em;
-   
 }
 
 header nav .nav-links a {
@@ -113,7 +114,6 @@ header .jumbotron .jumbotron-text h1 {
 }
 
 header .jumbotron .jumbotron-text p {
-  
     margin-bottom: 32px;
 }
 
@@ -132,7 +132,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
- 
 }
 
 main img {
@@ -187,7 +186,6 @@ main .productive .quote-card {
     max-width: 250px;
     
     padding: 20px;
-    margin-bottom: 80px;
 }
 
 main .productive .quote-card img {
@@ -301,4 +299,215 @@ footer .footer-container .social-networks {
 footer .footer-container .social-networks img {
     width: 30px;
     margin: 5px;
+}
+
+
+/*__________MEDIA QUERIES_____________________________*/
+@media only screen and (min-width : 768px) {
+    header .jumbotron {
+        flex-direction: row;
+        margin-bottom: 100px;
+
+        text-align: left;
+    }
+
+    header .jumbotron .jumbotron-text {
+        order: 1;
+        flex: 1;
+        padding-right: 30px;
+        margin-bottom: 0;
+    }
+
+    
+    header .jumbotron img {
+        order: 2;
+        flex: 1;
+    }
+
+
+
+    main {
+        flex-direction: row;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    main .productive-img {
+        order: 2;
+    }
+    main .productive {
+        order: 1;
+        align-items: flex-start;
+
+        padding-left: 0;
+    }
+
+
+
+    aside {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+
+
+
+    footer .footer-nav {
+        flex-direction: row;
+    }
+
+    footer .footer-nav .footer-nav-links {
+        margin-right: 150px;
+    }
+}
+
+
+@media only screen and (min-width : 1024px) {
+    header {
+        margin: 0 auto;
+    }
+
+    header nav img {
+        width: 150px;
+    }
+
+    header nav .nav-links {
+        font-size: 1.0rem;
+    }
+
+    header nav .nav-links :not(:last-child) {
+        margin-right: 50px;
+    }
+
+    header .jumbotron img {
+        margin-bottom: 0;
+
+        position: relative;
+        z-index: -1;
+    }
+
+    header .jumbotron .jumbotron-text {
+        position: relative;
+        z-index: 3;
+    }
+
+    header .jumbotron .jumbotron-text h1 {
+        font-size: 2.7rem;
+        line-height: 3.8rem;
+        padding-right: 0px;
+    }
+
+    header .jumbotron .jumbotron-text p {
+        font-size: 1.2rem;
+        padding-right: 40px;
+    }
+
+    header .jumbotron-text .jumbotron-form {
+        flex-direction: row;
+    }
+
+    header .jumbotron-text .jumbotron-form input {
+        flex: 2;
+        max-width: 350px;
+        margin: 0 15px 0 0;
+    }
+
+    header .jumbotron-text .jumbotron-form button {
+        flex: 1;
+        max-width: 180px;
+    }
+
+    main {
+        align-items: flex-start;
+    }
+
+    main img {
+        flex: 1;
+    }
+
+    main .productive {
+        flex: 1;
+        align-items: flex-start;
+    
+    }
+
+    main .productive h2 {
+        font-size: 2.7rem;
+        text-align: left;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    main .productive p {
+        font-size: 1.1rem;
+    }
+
+    main .productive .how-works-btn {
+        align-items: center;
+        width: 185px;
+    }
+
+    main .productive .how-works-btn a{
+        font-size: 1rem;
+    }
+
+    main .quote-card .profile img {
+        max-width: 30px;
+    }
+
+    main .productive .quote-card p {
+        font-size: 0.9rem;
+    }
+
+
+
+    aside {
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+        text-align: left;
+    }
+
+    aside .early-access {
+        flex: 1;
+        margin-right: 100px;
+    }
+
+    aside .early-access h2 {
+        font-size: 2rem;
+    }
+
+    aside .early-access p {
+        font-size: 1.1rem;
+    }
+
+    aside .early-access-input {
+        flex: 1;
+        padding: 0;
+
+    }
+
+    aside .early-access-input button {
+        max-width: 200px;
+    }
+
+
+
+    footer .footer-container {
+        display: flex;
+    }
+
+    footer .footer-container .footer-info {
+        flex: 1;
+        margin-right: 100px;
+    }
+
+    footer .footer-container .footer-nav {
+        flex: 1;
+    }
+
+    footer .footer-container .social-networks {
+        flex: 1;
+        justify-content: flex-start;
+    }
 }
